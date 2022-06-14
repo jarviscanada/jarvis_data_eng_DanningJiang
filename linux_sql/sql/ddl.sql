@@ -1,7 +1,7 @@
 -- DDL
 CREATE TABLE PUBLIC.host_info 
   ( 
-     id               SERIAL NOT NULL, 
+     id               SERIAL NOT NULL PRIMARY KEY, 
      hostname         VARCHAR NOT NULL UNIQUE, 
      cpu_number       INTEGER NOT NULL,
      cpu_architecture VARCHAR NOT NULL,
