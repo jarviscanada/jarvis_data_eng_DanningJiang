@@ -16,7 +16,13 @@ Implement a script to create/start/stop the psql container.<br>
 # stop the running psql docker container
 ./scripts/psql_docker.sh stop
 ```
-## host_info.sh
+## sql/ddl.sql
+Execute ddl.sql script on the host_agent database in the psql instance. `ddl.sql` including 2 table creating operations.`host_info` and `host_usage` table.
+```
+psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
+```
+
+## scripts/host_info.sh
 The script collects hardware specification data and then insert the data to the psql instance. You can assume that hardware specifications are static, so the script will be executed only once.<br>
 **usage**
 ```
@@ -27,7 +33,7 @@ The script collects hardware specification data and then insert the data to the 
 ./scripts/host_info.sh "localhost" 5432 "host_agent" "postgres" "mypassword"
 ```
 
-## host_usage.sh
+## scripts/host_usage.sh
 The script collects server usage data and then insert the data into the psql database. The script will be executed every minute using Linux `crontab`.<br>
 **usage**
 ```
