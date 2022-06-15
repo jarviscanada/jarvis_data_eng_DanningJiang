@@ -15,7 +15,7 @@ CREATE TABLE PUBLIC.host_info
   CREATE TABLE PUBLIC.host_usage 
   ( 
      "timestamp"    TIMESTAMP NOT NULL, 
-     host_id        SERIAL NOT NULL references host_info(id),
+     host_id        INTEGER NOT NULL references host_info(id),
      memory_free    INTEGER NOT NULL,
      cpu_idle       INTEGER NOT NULL,
      cpu_kernel     INTEGER NOT NULL,
