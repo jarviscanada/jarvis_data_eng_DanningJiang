@@ -1,18 +1,35 @@
-#save hostname to a variable
-hostname=$(hostname -f) #rvs-remote-desktop-centos7.us-east1-c.c.warm-scion-350516.internal
+#!/bin/bash
+psql_host=$1
+psql_port=$2
+db_name=$3
+psql_user=$4
+psql_password=$5
 
-#save the output of command `lscpu` to a variable lscpu_out
+#Check # of args
+if [ $# -ne  5 ];then
+  echo 'Illegal number of parameters'
+  exit 1
+fi
+
+#Save machine statistics in MB and current machine hostname to variables
+hostname=$(hostname -f)
 lscpu_out=`lscpu`
-#save number of CPU to a variable
-#note: `xargs` is a trick to remove leading and trailing white spaces
-cpu_number=$(echo "$lscpu_out"  | egrep "^CPU\(s\):" | awk '{print $2}' | xargs) 
 
+#Retrieve hardware specification variables --> host_info
+cpu_number=$(echo "$lscpu_out"  | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
+cpu_architecture=$(echo "$lscpu_out"|egrep "^Architecture:"|awk '{print $2}'|xargs)
+cpu_model=$(echo "$lscpu_out"|grep "Model name"|awk '{print $3,$4,$5,$6,$7}')
+cpu_mhz=$(echo "$lscpu_out" | grep "CPU MHz" | awk '{print $3}' | xargs)
+l2_cache=$(echo "$lscpu_out" | grep "L2 cache" | awk '{print $3}' | xargs)
+total_mem=$(grep MemTotal /proc/meminfo|awk '{print $2}') #in KB
+timestamp=$(date "+%Y-%m-%d %H:%M:%S")
 
-#hardware info
-cpu_number=$(echo "$lscpu_out"  | egrep "^CPU\(s\):" | awk '{print $2}' | xargs) #2
-cpu_architecture=$(echo "$lscpu_out"|egrep "^Architecture:"|awk '{print $2}'|xargs) #x86_64
-cpu_model=Intel(R) Xeon(R) CPU @ 2.30GHz
-cpu_mhz=2299.998
-l2_cache=256 #in KB
-total_mem=$(grep MemTotal /proc/meminfo|awk '{print $2}') #7489612 #in KB
-timestamp=$(date "+%Y-%m-%d %H:%M:%S") #current timestamp in `2019-11-26 14:40:19` format 
+#PSQL command: Inserts server usage data into host_usage table
+insert_stmt="INSERT INTO host_info(hostname,cpu_number,cpu_architecture,cpu_model,cpu_mhz,l2_cache,total_mem,"timestamp") VALUES('$hostname',$cpu_number,'$cpu_architecture','$cpu_model',$cpu_mhz,'$l2_cache',$total_mem,'$timestamp');"
+
+#set up env var for pql cmd
+export PGPASSWORD=$psql_password 
+#Insert date into a database
+psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
+exit $? 
+
