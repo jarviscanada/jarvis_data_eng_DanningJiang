@@ -1,7 +1,7 @@
 # Linux Cluster Monitoring Agent
-## Introduction
+# Introduction
 This monitoring agent program aims to record the hardware specifications of each host and monitor host resource usages (e.g. CPU/Memory) in real-time. The agent will be installed on each server to collect both hardware specification data and resource usage data, and then persist the collected data into an RDBMS database through a psql instance(container). Therefore, the program can be installed on each server and collect data automatically and detect the data usage. Technologies being used include Bash, Docker, Git, PostgreSQL.
-## Quick Start
+# Quick Start
 ```
 # change the current working directory
 cd linux_sql
@@ -32,16 +32,16 @@ crontab -e
 * * * * * bash ~/dev/jarvis_data_eng_Danning/linux_sql/scripts/host_usage.sh localhost 5432 host_agent postgres 123456 > /tmp/host_usage.log
 
 ```
-## Implementation
+# Implementation
 First,set up a psql instance using docker and name the container as "jrvs-psql".<br>
 Second,check the instance is running and connect to it.<br>
 Third, create two tables to store hardware specifications data and resource usage data into the psql instance to perform data analytics.<br>
 Forth, insert hardware specs data and hardware usage data into corresponding tables.<br>
 Fifth, create the crontab job to make the script being executed every minute using Linux.<br>
 
-### Architecture
-
-### Scripts
+## Architecture
+![Architecture Diagram](./assets/linux_SQL_arch.jpg)
+## Scripts
 - **psql_docker.sh** under `/scripts` directory.<br>
 A script to create/start/stop the psql container.
 ```
@@ -90,11 +90,37 @@ Third query is to detect host failures to see if it inserts 5 data points within
 *usage*
 psql -h localhost -U postgres -d host_agent -f sql/queries.sql
 ```
-
-### Database Modeling
+## Database Modeling
 - **host_info table**
 
+| id      | hostname | cpu_number | cpu_architecture | cpu_model | cpu_mhz | l2_cache | total_mem | timestamp |
+|---------|----------|------------|------------------|-----------|---------|----------|-----------|-----------|
+| serial  | text     | integer    | varchar          | text      | real    | varchar  | integer   | timestamp |
+
+**Constraints**<br>
+Primary Key:`id`<br>
+UNIQUE:`hostname`<br>
+
 - **host_usage table**
+
+| timestamp | host_id | memory_free | cpu_idle | cpu_kernel | disk_io | disk_available |
+|-----------|---------|-------------|----------|------------|---------|----------------|
+| timestamp | integer | integer     | integer  | integer    | integer | varchar        |
+
+**Constraints**<br>
+Foreign Key:`host_id` reference to `id` in `host_info` table.<br>
+
+# Test
+Testing each bash scripts and SQL queries through the Linux CLI.
+For better test result, some entries into host_info table are manually inserted.
+Also used IntelliJ IDEA database tool to test the SQL queries, which can give a more intuitive result when testing more complicated queries. 
+# Deployment
+The agent program is scheduled using crontab. Source code is managed by GitHub. Database is provisioned with Docker container.
+
+# Improvements
+- create a script to stop the crontab job when there is no need to record the data, in case the database gets huge. 
+
+
 
 
 
