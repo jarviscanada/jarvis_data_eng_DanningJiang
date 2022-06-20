@@ -12,21 +12,23 @@ BEGIN
 END;
 $$
     LANGUAGE PLPGSQL;
-SELECT DISTINCT
+SELECT
     hu.host_id,
     hi.hostname,
     round5(hu."timestamp") AS "timestamp",
     AVG(
     (hi.total_mem - hu.memory_free)* 100 / hi.total_mem
-        ) 
-    OVER(
-        PARTITION BY round5(hu."timestamp"), hu.host_id
-        ) AS used_mem_percentage
+        )
+    AS used_mem_percentage
+
 FROM
     host_usage hu,
     host_info hi
 WHERE
-    hu.host_id = hi.id;
+   hu.host_id = hi.id
+GROUP BY round5(hu."timestamp"),hu.host_id,hi.hostname
+ORDER BY host_id,round5(hu."timestamp");
+
 
 --3.Detect host failure
 --show the number of host_usage data collections happened in 5 minute intervals.
