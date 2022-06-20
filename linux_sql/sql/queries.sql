@@ -12,16 +12,34 @@ BEGIN
 END;
 $$
     LANGUAGE PLPGSQL;
-
-SELECT host_id,hostname,
-round5(host_usage."timestamp") AS "timestamp",
-AVG((total_mem-memory_free)*100/total_mem) AS "avg_used_mem_percentage"
-GROUP BY host_id,round5(host_usage."timestamp")
-FROM host_usage 
-LEFT JOIN host_info 
-ON host_info.id = host_usage.host_id;
+SELECT DISTINCT
+    hu.host_id,
+    hi.hostname,
+    round5(hu."timestamp") AS "timestamp",
+    AVG(
+    (hi.total_mem - hu.memory_free)* 100 / hi.total_mem
+        ) 
+    OVER(
+        PARTITION BY round5(hu."timestamp"), hu.host_id
+        ) AS used_mem_percentage
+FROM
+    host_usage hu,
+    host_info hi
+WHERE
+    hu.host_id = hi.id;
 
 --3.Detect host failure
+--show the number of host_usage data collections happened in 5 minute intervals.
+SELECT DISTINCT
+    host_id,
+    round5("timestamp") AS ts,
+    COUNT(host_id) OVER(
+        PARTITION BY round5("timestamp"), host_id
+    ) AS num_data_points
+FROM
+    host_usage
+ORDER BY
+    host_id, ts;
 
 
 
