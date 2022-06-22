@@ -40,7 +40,7 @@ Forth, insert hardware specs data and hardware usage data into corresponding tab
 Fifth, create the crontab job to make the script being executed every minute using Linux.<br>
 
 ## Architecture
-![Architecture Diagram](./assets/linux_SQL_arch.jpg)
+![Architecture Diagram](./assets/Architecture.png)
 ## Scripts
 - **psql_docker.sh** under `/scripts` directory.<br>
 A script to create/start/stop the psql container.
