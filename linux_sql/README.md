@@ -1,6 +1,6 @@
 # Linux Cluster Monitoring Agent
 # Introduction
-This monitoring agent program aims to record the hardware specifications of each host and monitor host resource usages (e.g. CPU/Memory) in real-time. The agent will be installed on each server to collect both hardware specification data and resource usage data, and then persist the collected data into an RDBMS database through a psql instance(container). Therefore, the program can be installed on each server and collect data automatically and detect the data usage. Technologies being used include Bash, Docker, Git, PostgreSQL.
+This monitoring agent program aims to record the hardware specifications of each host and monitor host resource usages (e.g. CPU/Memory) in real-time. The agent will be installed on each server/host to collect both hardware specification data and resource usage data, and then persist the collected data into an RDBMS database through a psql instance(container). Therefore, the program can be installed on each server and collect data automatically and detect the data usage. Technologies being used include Bash, Docker, Git, PostgreSQL.
 # Quick Start
 ```
 # change the current working directory
