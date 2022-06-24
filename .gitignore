@@ -6,4 +6,13 @@ target/
 *.logs
 *.iml
 .idea/
+.config/
 .eclipse
+.jupyter/
+.ipynb_checkpoints/
+.ipython/
+.local/
+.npm/
+config.ini
+
+
