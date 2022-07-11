@@ -22,13 +22,15 @@ As per request, the LGS IT team dumped the transaction data between 01/12/2009 a
 
 We then store the sql file into our PostgreSQL data warehouse, it uses OnLine Analytical Processing (OLAP) to analyze massive volumes of data rapidly. Finally, we are ready to use Jupyter notebook to connect the PostgreSQL Database to do the data analytics.<br>
 
-> London Gift Shop's system design diagram
-![Architecture](assets/LGS_system_design.png)
+---
 
->ETL
-![ETL](assets/ETL.png)
+![Architecture](assets/LGS_system_design.png "London Gift Shop's system design")  
+>**London Gift Shop's system design diagram**
 
+---
 
+![ETL](assets/ETL.png "ETL")
+>**ETL**
 ## Data Analytics and Wrangling
 
 The link to the Jupyter Notebook Project: [retail_data_analytics_wrangling.ipynb](./retail_data_analytics_wrangling.ipynb)
