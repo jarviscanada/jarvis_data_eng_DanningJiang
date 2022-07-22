@@ -1,6 +1,6 @@
 # Danning Jiang . Jarvis Consulting
 
-I am concentrated on software development and have hands-on experience in real projects, I am highly detail-oriented and logical.>- I am a fast learner and has strong motivation to work on cutting-edge technologies and have a good sense about coding, I pursues the high-quality and easy-to-understand codes. >- I also has a very engaging personality and exudes positive energy.
+I am concentrated on software development and have hands-on experience in real projects, I am highly detail-oriented and logical. I am a fast learner and has strong motivation to work on cutting-edge technologies and have a good sense about coding, I pursues the high-quality and easy-to-understand codes. I also has a very engaging personality and exudes positive energy.
 
 ## Skills
 
