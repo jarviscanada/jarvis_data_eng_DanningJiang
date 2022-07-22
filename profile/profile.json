@@ -2,96 +2,52 @@
   "education": [
     {
       "awards_achievements": [
-        "Scholarship",
-        "Dean's List (2015, 2016): Ut enim ad minim veniam",
-        "GPA: 3.8/4.0"
+        "GPA: 85%"
       ],
-      "degree": "Bachelor of Applied Sciences",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2012-2016",
-      "school_name": "XYZ university"
+      "degree": "Master of Computer Sciences",
+      "department": "Computer Science",
+      "duration": "2020-2022",
+      "school_name": "Lakehead University"
     },
     {
-      "awards_achievements": null,
-      "degree": "Master of Engineering",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2016-2018",
-      "school_name": "XYZ university"
+      "awards_achievements": [
+        "Scholarship",
+        "GPA: 85%"
+      ],
+      "degree": "Bachelor of Engineering",
+      "department": "Information Technology",
+      "duration": "2013-2017",
+      "school_name": "NANJING FOREST COLLEGE"
     }
   ],
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_DanningJiang",
   "highlighted_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
-      "name": "Web app for resturant"
-    },
-    {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": null,
-      "name": "Machine Learning"
+      "description": "Designed a Library seat booking and selection system based on students' opinions. Combined the system with access control system and realized the function of login verification, seat selection, reservation, and cancellation. Realized adding and deleting seats dynamically on the actual seat layout.",
+      "git_url": "https://github.com/dn717/Library-Seat-Selection-System",
+      "name": "The Design and Implementation of The Library Seat Booking Selection System"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "This monitoring agent program aims to record the hardware specifications of each host and monitor host resource usages (e.g. CPU/Memory) in real-time. The agent will be installed on each server to collect both hardware specification data and resource usage data, and then persist the collected data into an RDBMS database through a psql instance(container).Using crotab job to execute the script every minute. Therefore, the program can be installed on each server and collect data automatically and detect the data usage. Technologies being used include Bash, Docker, Git, PostgreSQL.",
+      "description": "Developed the monitoring agent program aims to record the hardware specifications of each host and monitor host resource usages (e.g. CPU/Memory) in real-time. The agent will be installed on each server to collect both hardware specification data and resource usage data, and then persist the collected data into an RDBMS database through a psql instance(container).Used crotab job to execute the script every minute. The program can be installed on each server and collect data automatically and detect the data usage. Technologies being used include Bash, Docker, Git, PostgreSQL.",
       "git_url": "/linux_sql",
       "name": "Linux Cluster Resource Monitoring Agent"
     },
     {
-      "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      ],
-      "git_url": "/core_java",
-      "name": "Core Java Apps"
-    },
-    {
-      "description": "",
-      "git_url": "/springboot",
-      "name": "Springboot App"
-    },
-    {
-      "description": "",
-      "git_url": "/python_data_anlytics",
+      "description": "Delivered the proof of concept project (PoC) that helps the marketing team by analyzing and visualizing customer shopping behaviour data. The data is stored in a PostgreSQL database which is provisioned using a docker container, and it is connected to the Jupyter Notebook to perform analyses. Pandas, NumPy, and MatPlotLib libraries are used to wrangle the dataset as well as display the results. It uses OLAP to analyze massive volumes of data rapidly.",
+      "git_url": "/python_data_analytics",
       "name": "Python Data Analytics"
-    },
-    {
-      "description": "",
-      "git_url": "/hadoop",
-      "name": "Hadoop"
-    },
-    {
-      "description": "",
-      "git_url": "/spark",
-      "name": "Spark"
-    },
-    {
-      "description": "",
-      "git_url": "/cloud_devops",
-      "name": "Cloud/DevOps"
     }
   ],
   "name": "Danning Jiang",
   "others": [
     {
       "bullets": [
-        "Udacity Machine Learning (2019)"
-      ],
-      "title": "Certificates"
-    },
-    {
-      "bullets": [
-        "Winner"
-      ],
-      "title": "Awards"
-    },
-    {
-      "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+        "Volunteer,The 2014 Summer Youth Olympic Games",
+        "Volunteer, School's Food bank",
+        "Playing Piano",
+        "Video Editing"
       ],
       "title": "Activities/Hobbies"
     }
@@ -99,24 +55,30 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2020-present",
+      "description": "Completed projects like Linux-SQL, Data Analytics, etc.",
+      "duration": "May 2022-present",
       "title": "Software Developer"
     },
     {
-      "company": "XYZ Company",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2019",
-      "title": "Tutor"
+      "company": "unTribe",
+      "description": "1.Collaborated with senior team members to implement REST web service module, Glossary, which enables searching through keywords, fetching last update, and adding comments. 2.Worked with PM and UX to finalize and develop UI for Glossary interface with Figma and React components library. 3.Implemented and optimized GraphQL client-side queries to improve data fetching from the Neo4j database.",
+      "duration": "Jan - Apr 2021",
+      "title": "Software Developer,UI designer"
+    },
+    {
+      "company": "HikerWay",
+      "description": "1.Implemented Client-Server communication and User Login modules to enable user authentication through server issued tokens. 2.Improved picture list loading speed by implementing RecyclerView and deprecating ListView for frequent updates and partial refreshes for data sources. 3.Designed and improved layouts of the fragments to enhance user experience. 4.Reduced the error rate by fixing the Login modules bugs and stabilizing the login workflow.",
+      "duration": "Sep 2021-Mar 2022",
+      "title": "Android App Developer"
     }
   ],
   "skills": {
     "competent": [
-      "JavaScript",
-      "HTML/CSS",
-      "ETL",
+      "Bash",
+      "Git",
+      "React",
       "Node.js",
-      "React"
+      "Vue.js"
     ],
     "familiar": [
       "C#",
@@ -128,11 +90,11 @@
     "proficient": [
       "Python",
       "Java",
-      "Linux/Bash",
-      "RDBMS/SQL",
-      "Machine Learning/Deep Learning",
-      "Git"
+      "Javascript",
+      "HTML/CSS",
+      "SQL",
+      "Machine Learning/Deep Learning"
     ]
   },
-  "summary": "I am concentrated on software development and have hands-on experience in real projects, I am highly data-sensitive and logical, and skilled at analyzing data and confident at large dataset. I am a fast learner and has strong motivation to work on cutting-edge technologies and have a good sense about coding, I pursues the high-quality and easy-to-understand codes. I also has a very engaging personality and exudes positive energy."
+  "summary": "I am concentrated on software development and have hands-on experience in real projects, I am highly detail-oriented and logical.\u003e- I am a fast learner and has strong motivation to work on cutting-edge technologies and have a good sense about coding, I pursues the high-quality and easy-to-understand codes. \u003e- I also has a very engaging personality and exudes positive energy."
 }
