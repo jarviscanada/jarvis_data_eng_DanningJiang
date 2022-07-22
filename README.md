@@ -5,5 +5,5 @@
 4. [Hadoop/Hive](./hadoop) In-progress
 5. [Spark/Scala](./spark) In-progress
 6. [Cloud/DevOps](./cloud_devops) In-progress
-7. [Python Data Analytics](./python_data_analytics)
+7. [Python Data Analytics](./python_data_analytics) completed
 
