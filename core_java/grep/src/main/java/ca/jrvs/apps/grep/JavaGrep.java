@@ -19,7 +19,7 @@ public interface JavaGrep {
     List<File> listFiles(String rootDir);
 
     /**
-     * Return a file and return all the lines
+     * Read a file and return all the lines
      *
      * FileReader: Opens a file to be read as an input stream.
      * BufferedReader: Reads an input stream and buffers the input in order to increase efficiency.
@@ -30,7 +30,7 @@ public interface JavaGrep {
      * @return lines
      * @throws IllegalArgumentException if a given inputFile is not a file
      */
-    List<String> readLines(File inputFile);
+    List<String> readLines(File inputFile) throws IllegalArgumentException;
 
     /**
      * check if a line contains the regex pattern (passed by user)
