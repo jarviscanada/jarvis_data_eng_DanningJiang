@@ -61,7 +61,7 @@ public class JavaGrepImp implements JavaGrep{
      * @return files under the rootDir
      */
     @Override
-    public List<File> listFiles(String rootDir) {
+    public List<File> listFiles(String rootDir) throws IOException {
         List<File> allFiles = new ArrayList<File>();
         File curDir = new File(rootDir);
         if(curDir.listFiles() != null){ //curDir.listFiles() return File[] object
