@@ -24,7 +24,7 @@ public class Solution {
 //        return true;
         return m1.equals(m2);
     }
-    public int fibonacci(int n){
+    public static int fibonacci(int n){
         Map<Integer,Integer> cache = new HashMap<>();
         if(n<2){
             return n;
@@ -37,17 +37,4 @@ public class Solution {
         return result;
     }
 
-    public static void main(String[] args) {
-        Map<Integer,String> m1 = new HashMap<Integer,String>();
-        Map<Integer,String> m2 = new HashMap<Integer,String>();
-        m1.put(1,"a");
-        m1.put(2,"b");
-        m2.put(1,"a");
-        m2.put(3,"b");
-        if(compareMaps(m1,m2)){
-            System.out.println("same");
-        }else{
-            System.out.println("different");
-        }
-    }
 }

@@ -24,4 +24,8 @@ public class SolutionTest {
         assertFalse("compare two different maps",Solution.compareMaps(m1,m3));
 
     }
+    @Test
+    public void fibonacciTest(){
+        assertEquals(8,Solution.fibonacci(6));
+    }
 }
