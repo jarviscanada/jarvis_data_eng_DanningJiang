@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 public class TwitterHttpHelperTest {
 
     @Test
-    public void httpPost() throws Exception{
+    public void httpPostTest() throws Exception{
         String consumerKey = System.getenv("consumerKey");
         String consumerSecret = System.getenv("consumerSecret");
         String accessToken = System.getenv("accessToken");
@@ -24,7 +24,7 @@ public class TwitterHttpHelperTest {
     }
 
     @Test
-    public void httpGet() throws Exception{
+    public void httpGetTest() throws Exception{
         String consumerKey = System.getenv("consumerKey");
         String consumerSecret = System.getenv("consumerSecret");
         String accessToken = System.getenv("accessToken");
