@@ -3,7 +3,7 @@ package ca.jrvs.apps.twitter.dao;
 import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
 import ca.jrvs.apps.twitter.model.Coordinates;
 import ca.jrvs.apps.twitter.model.Tweet;
-import ca.jrvs.apps.twitter.example.JsonParse;
+import ca.jrvs.apps.twitter.util.JsonParse;
 
 import junit.framework.TestCase;
 import org.junit.runner.RunWith;
