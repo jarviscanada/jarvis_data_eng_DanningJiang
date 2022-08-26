@@ -10,10 +10,12 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.springframework.http.HttpMethod;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.net.URI;
 
+@Component
 public class TwitterHttpHelper implements HttpHelper{
     /**
      * Dependencies are specified as private member variables
@@ -33,7 +35,6 @@ public class TwitterHttpHelper implements HttpHelper{
                              String tokenSecret){
         consumer = new CommonsHttpOAuthConsumer(consumerKey, consumerSecret);
         consumer.setTokenWithSecret(accessToken, tokenSecret);
-        //Default = single connection.
         //httpClient = new DefaultHttpClient();
         httpClient = HttpClientBuilder.create().build();
     }

@@ -11,14 +11,18 @@ import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.service.Service;
 import ca.jrvs.apps.twitter.service.TwitterService;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TwitterCLIApp {
 
     public static final String USAGE = "USAGE: TwitterCLIApp post|show|delete [options]";
 
     private Controller controller;
-    //constructor injection
+    //constructor dependency injection
     //@Autowired - no need on constructor since Spring4.3
+    @Autowired
     public TwitterCLIApp(Controller controller) { this.controller = controller; }
 
     public static void main(String[] args) {
@@ -38,7 +42,7 @@ public class TwitterCLIApp {
         app.run(args);
     }
 
-    private void run(String[] args) {
+    public void run(String[] args) {
         if (args.length == 0) {
             throw new IllegalArgumentException(USAGE);
         }

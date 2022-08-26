@@ -9,11 +9,13 @@ import org.apache.http.HttpResponse;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+@Repository
 public class TwitterDao implements CrdDao<Tweet,String> {
 
     //URI constants
