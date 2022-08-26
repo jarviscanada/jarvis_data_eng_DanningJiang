@@ -30,7 +30,7 @@ java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp <regex> <inp
 
 1.pull the docker image from DockerHub   
 ```
-docker pull dj777/grep
+docker pull dj717/grep
 ```
 
 2.start a container from that image 
@@ -76,7 +76,7 @@ mvn clean package
 
 3.Build a new docker image locally
 ```
-docker_user=dj777
+docker_user=dj717
 docker build -t ${docker_user}/grep .
 ```
 
