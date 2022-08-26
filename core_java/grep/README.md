@@ -38,7 +38,7 @@ docker pull dj717/grep
 docker run --rm \ 
 -v <local_data_path>:<container_data_path> \
 -v <local_output_path>:<container_output_path> \
-dj777/grep <regex_pattern> <inputFilePath> <outFilePath>
+dj717/grep <regex_pattern> <inputFilePath> <outFilePath>
 ```
 - <local_xxx_path>: the entire path of shared folder on local machine
 - <container_xxx_path>:the path within the container where shared folder can be found
