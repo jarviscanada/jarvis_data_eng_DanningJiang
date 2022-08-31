@@ -17,6 +17,12 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DanningJia
 
 **Linux Cluster Resource Monitoring Agent** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang/tree/master/linux_sql)]: Developed the monitoring agent program aims to record the hardware specifications of each host and monitor host resource usage (e.g. CPU/Memory) in real-time. The agent was installed on each server to collect both hardware specification data and resource usage data, and then persisted the collected data into an RDBMS database through a psql instance(container). Used cron job to collect data automatically and detect the data usage. Technologies being used include Bash, Docker, Git, PostgreSQL.
 
+**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang/tree/master/core_java)]:
+      
+  - Twitter App: Built a Java Twitter command line CRUD application that uses Twitter's REST APIs to provide services to the end-user, such as being able post, show, or delete Tweets. The application follows the MVC architecture and comprises multiple layers to facilitate development and testing. Spring Boot was used to manage all of the dependencies. JUnit and Mockito were used to test the application, and Maven was used to package it. Deployment was done using Docker.
+  - JDBC App: Implemented a JDBC app that connects Java to a PostgreSQL database. It allows performing CRUD operations on retail database by mapping the Java objects to the relational database tables through the JDBC interface. It was built using the Data Access Object (DAO) pattern and tested on generated SQL sales data, made in Java with the Maven.
+  - Grep App: Developed a java tool which can search through all files recursively under a specified directory with given text pattern, similar to the GREP command in Linux. The app was written in Java 8 and utilizes its features such as Lambdas and Streams for efficient data processing. It was created using the Maven and packaged using Docker and available on DockerHub.
+
 **Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang/tree/master/python_data_analytics)]: Performed data analytics that helps the marketing team of a retailer by analyzing and visualizing their customer shopping behaviour data. The data was stored in a PostgreSQL database which was provisioned using a docker container, and it was connected to the Jupyter Notebook to perform analyses. Pandas, NumPy, and MatPlotLib libraries are used to wrangle the dataset as well as display the results. OLAP method was used to analyze massive volumes of data rapidly.
 
 
@@ -30,7 +36,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DanningJia
 
 **Software Developer, Jarvis (May 2022-present)**: Completed projects like Linux-SQL, Data Analytics, etc.
 
-**Software Developer,UI designer, unTribe (Jan - Apr 2021)**: Collaborated with senior team members to implement REST web service module, Glossary, which enables searching through keywords, fetching last update, and adding comments. Worked with PM and UX to finalize and develop UI for Glossary interface with Figma and React components library. Implemented and optimized GraphQL client-side queries to improve data fetching from the Neo4j database.
+**Software Developer, unTribe (Jan - Apr 2021)**: Collaborated with senior team members to implement REST web service module, Glossary, which enables searching through keywords, fetching last update, and adding comments. Worked with PM and UX to finalize and develop UI for Glossary interface with Figma and React components library. Implemented and optimized GraphQL client-side queries to improve data fetching from the Neo4j database.
 
 **Android App Developer, HikerWay (Sep 2021-Mar 2022)**: Implemented Client-Server communication and User Login modules to enable user authentication through server issued tokens. Improved picture list loading speed by implementing RecyclerView and deprecating ListView for frequent updates and partial refreshes for data sources. Designed and improved layouts of the fragments to enhance user experience. Reduced the error rate by fixing the Login modules bugs and stabilizing the login workflow.
 
