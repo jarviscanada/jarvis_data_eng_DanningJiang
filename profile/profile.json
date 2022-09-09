@@ -40,6 +40,15 @@
       "name": "Linux Cluster Resource Monitoring Agent"
     },
     {
+      "description": [
+        "Twitter App: Built a Java Twitter command line CRUD application that uses Twitter's REST APIs to provide services to the end-user, such as being able post, show, or delete Tweets. The application follows the MVC architecture and comprises multiple layers to facilitate development and testing. Spring Boot was used to manage all of the dependencies. JUnit and Mockito were used to test the application, and Maven was used to package it. Deployment was done using Docker.",
+        "JDBC App: Implemented a JDBC app that connects Java to a PostgreSQL database. It allows performing CRUD operations on retail database by mapping the Java objects to the relational database tables through the JDBC interface. It was built using the Data Access Object (DAO) pattern and tested on generated SQL sales data, made in Java with the Maven.",
+        "Grep App: Developed a java tool which can search through all files recursively under a specified directory with given text pattern, similar to the GREP command in Linux. The app was written in Java 8 and utilizes its features such as Lambdas and Streams for efficient data processing. It was created using the Maven and packaged using Docker and available on DockerHub."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
       "description": "Performed data analytics that helps the marketing team of a retailer by analyzing and visualizing their customer shopping behaviour data. The data was stored in a PostgreSQL database which was provisioned using a docker container, and it was connected to the Jupyter Notebook to perform analyses. Pandas, NumPy, and MatPlotLib libraries are used to wrangle the dataset as well as display the results. OLAP method was used to analyze massive volumes of data rapidly.",
       "git_url": "/python_data_analytics",
       "name": "Python Data Analytics"
@@ -68,7 +77,7 @@
       "company": "unTribe",
       "description": "Collaborated with senior team members to implement REST web service module, Glossary, which enables searching through keywords, fetching last update, and adding comments. Worked with PM and UX to finalize and develop UI for Glossary interface with Figma and React components library. Implemented and optimized GraphQL client-side queries to improve data fetching from the Neo4j database.",
       "duration": "Jan - Apr 2021",
-      "title": "Software Developer,UI designer"
+      "title": "Software Developer"
     },
     {
       "company": "HikerWay",
