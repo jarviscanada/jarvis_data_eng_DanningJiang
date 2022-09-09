@@ -33,14 +33,20 @@ crontab -e
 
 ```
 # Implementation
-First,set up a psql instance using docker and name the container as "jrvs-psql".<br>
-Second,check the instance is running and connect to it.<br>
-Third, create two tables to store hardware specifications data and resource usage data into the psql instance to perform data analytics.<br>
-Forth, insert hardware specs data and hardware usage data into corresponding tables.<br>
-Fifth, create the crontab job to make the script being executed every minute using Linux.<br>
+1.set up a psql instance using docker and name the container as "jrvs-psql".<br>
+2.check the instance is running and connect to it.<br>
+3.create two tables to store hardware specifications data and resource usage data into the psql instance to perform data analytics.<br>
+4.insert hardware specs data and hardware usage data into corresponding tables.<br>
+5.create the crontab job to make the script being executed every minute using Linux.<br>
 
 ## Architecture
 ![Architecture Diagram](./assets/Architecture.png)
+
+- A `psql` instance is used to persist all the data.
+- The `bash agent` gathers server usage data, and then insert into the psql instance. The `agent` will be installed on every host/server/node. The `agent` consists of two bash scripts.
+  - `host_info.sh` collects the host hardware info and insert it into the database. It will be run only once at the installation time.
+  - `host_usage.sh` collects the current host usage (CPU and Memory) and then insert into the database. It will be triggered by the crontab job every minute.
+
 ## Scripts
 - **psql_docker.sh** under `/scripts` directory.<br>
 A script to create/start/stop the psql container.
