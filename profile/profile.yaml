@@ -1,0 +1,118 @@
+# Preferred name (Characters only)
+name: "Danning Jiang"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_DanningJiang
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: "I recently graduated with a master's degree in Computer Science from Lakehead University. I mainly focused on machine learning and deep learning during my graduate study. Currently, I am working at the Jarvis Consulting Group and concentrating on software development. I have some hands-on experience in software development, one of which is web development using the latest techniques like javascript, React, Apollo, and Node.js, with the Neo4j database. Also, I worked as an Android developer using Kotlin. For both those developments, I did the UI design for them as well, which I'm always interested in. After joining Jarvis, I consolidated my knowledge of Java, Linux, SQL, Bash, Git, and Docker techniques. It is worth mentioning that I have designed and implemented a library seat selecting and booking system which was developed in C#, using B/S architecture. I am highly detail-oriented and logical, also a fast learner, and have a strong motivation to work on cutting-edge technologies with a good sense of coding, I pursue high-quality and easy-to-understand code. I'm very engaging and full of exuding positive energy too."
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Python
+    - Java
+    - Javascript
+    - HTML/CSS
+    - SQL
+    - Machine Learning/Deep Learning
+  # At least 5 skills
+  competent:
+    - Linux/Bash
+    - Git
+    - React/Vue
+    - Kotlin
+    - Docker
+  # At least 5 skills
+  familiar:
+    - C#
+    - ASP.NET
+    - Node.js
+    - Figma
+    - Neo4J/GraphQL
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Linux Cluster Resource Monitoring Agent"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Developed the monitoring agent program aims to record the hardware specifications of each host and monitor host resource usage (e.g. CPU/Memory) in real-time. 
+    The agent was installed on each server to collect both hardware specification data and resource usage data, and then persisted the collected data into an RDBMS database through a psql instance(container). 
+    Used cron job to collect data automatically and detect the data usage. Technologies being used include Bash, Docker, Git, PostgreSQL."
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Twitter App: Built a Java Twitter command line CRUD application that uses Twitter's REST APIs to provide services to the end-user, such as being able post, show, or delete Tweets. The application follows the MVC architecture and comprises multiple layers to facilitate development and testing. Spring Boot was used to manage all of the dependencies. JUnit and Mockito were used to test the application, and Maven was used to package it. Deployment was done using Docker."
+      - "JDBC App: Implemented a JDBC app that connects Java to a PostgreSQL database. It allows performing CRUD operations on retail database by mapping the Java objects to the relational database tables through the JDBC interface. It was built using the Data Access Object (DAO) pattern and tested on generated SQL sales data, made in Java with the Maven."
+      - "Grep App: Developed a java tool which can search through all files recursively under a specified directory with given text pattern, similar to the GREP command in Linux. The app was written in Java 8 and utilizes its features such as Lambdas and Streams for efficient data processing. It was created using the Maven and packaged using Docker and available on DockerHub."
+  - name: "Python Data Analytics"
+    git_url: "/python_data_analytics"
+    description: "Performed data analytics that helps the marketing team of a retailer by analyzing and visualizing their customer shopping behaviour data.
+    The data was stored in a PostgreSQL database which was provisioned using a docker container, and it was connected to the Jupyter Notebook to perform analyses. 
+    Pandas, NumPy, and MatPlotLib libraries are used to wrangle the dataset as well as display the results. OLAP method was used to analyze massive volumes of data rapidly."
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "The Design and Implementation of The Library Seat Booking Selection System"
+    git_url: "https://github.com/dn717/Library-Seat-Selection-System"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Designed a Library seat booking and selection system to relieve the crowded seat occupancy of the library.
+    Combined the system with an access control system and realized the function of login verification, seat selection, reservation, cancellation, etc.
+    Realized adding and deleting seats dynamically on the actual seat layout.
+    The whole system was developed in C#, SQL Server, and used the B/S architecture through Visual Studio."
+  - name: "UI&UX Design"
+    git_url: "https://github.com/dn717/portfolio"
+    description: "Created some UI designs for mobile apps. Tools that have been used include Adobe XD, Figma."
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "May 2022-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Completed projects like Linux-SQL, Data Analytics, etc."
+  - title: "Software Developer"
+    company: "unTribe"
+    duration: "Jan - Apr 2021"
+    description: "Collaborated with senior team members to implement REST web service module, Glossary, which enables searching through keywords, fetching last update, and adding comments. 
+    Worked with PM and UX to finalize and develop UI for Glossary interface with Figma and React components library. 
+    Implemented and optimized GraphQL client-side queries to improve data fetching from the Neo4j database."
+  - title: "Android App Developer"
+    company: "HikerWay"
+    duration: "Sep 2021-Mar 2022"
+    description: "Implemented Client-Server communication and User Login modules to enable user authentication through server issued tokens. 
+    Improved picture list loading speed by implementing RecyclerView and deprecating ListView for frequent updates and partial refreshes for data sources. 
+    Designed and improved layouts of the fragments to enhance user experience. 
+    Reduced the error rate by fixing the Login modules bugs and stabilizing the login workflow."
+
+#List of edcuation
+education: 
+  - school_name: "Lakehead University"
+    duration: "2020-2022"
+    degree: "Master of Computer Sciences"
+    department: "Computer Science"
+    awards_achievements:
+      - "GPA: 85%"
+  - school_name: "Nanjing Forest College"
+    duration: "2013-2017"
+    degree: "Bachelor of Engineering"
+    department: "Information Technology"
+    awards_achievements:
+      - "The First Prize Scholarship"
+      - "GPA: 85%"
+
+#Optional section
+others:
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Volunteer, The 2014 Summer Youth Olympic Games"
+      - "Volunteer, LU's food bank"
+      - "Playing Piano"
+      - "Video Editing"
