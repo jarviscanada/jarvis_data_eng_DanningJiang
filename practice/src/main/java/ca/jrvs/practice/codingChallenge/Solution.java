@@ -37,4 +37,29 @@ public class Solution {
         return result;
     }
 
+    /**
+     * Two Sum - HashMap method
+     * Time Complexity:O(N)
+     * Space Complexity:O(N)
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+        HashMap<Integer,Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i],i);
+        }
+        for (int j = 0; j < nums.length; j++) {
+            int diff = target - nums[j];
+            if (map.containsKey(diff) &&  map.get(diff) != j) {
+                result[0] = j;
+                result[1] = map.get(diff);
+                return result;
+            }
+        }
+        return result;
+    }
+
 }
