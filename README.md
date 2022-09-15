@@ -1,9 +1,10 @@
 # Danning Jiang . Jarvis Consulting
-I recently graduated with a master's degree in Computer Science from Lakehead University. I mainly focused on machine learning and deep learning during my graduate study. Currently, I am working at the Jarvis Consulting Group and concentrating on software development. I have some hands-on experience in software development, one of which is web development using the latest techniques like javascript, React, Apollo, and Node.js, with the Neo4j database. Also, I worked as an Android developer using Kotlin. For both those developments, I did the UI design for them as well, which I'm always interested in. After joining Jarvis, I consolidated my knowledge of Java, Linux, SQL, Bash, Git, and Docker techniques. It is worth mentioning that I have designed and implemented a library seat selecting and booking system which was developed in C#, using B/S architecture. I am highly detail-oriented and logical, also a fast learner, and have a strong motivation to work on cutting-edge technologies with a good sense of coding, I pursue high-quality and easy-to-understand code. I'm very engaging and full of exuding positive energy too.
+
+I graduated with a master's degree in Computer Science from Lakehead University. I mainly focused on machine learning and deep learning during my graduate study. Currently, I am working at the Jarvis Consulting Group and concentrating on software development. I also had some hands-on experience in software development before, one of which is web development using the latest techniques like javascript, React, GraphQL, and Node.js, with the Neo4j database. Also, I worked as an Android developer  and used Kotlin as language. For both those developments, I did the UI design for them as well, which I'm always interested in. After joining Jarvis, I consolidated my knowledge of Java,Springboot, Linux, SQL, Bash, Git, and Docker techniques. It is worth mentioning that I had designed and implemented a library seat selecting and booking system which was developed in C#, using B/S architecture. I am highly detail-oriented and logical, also a fast learner, and have a strong motivation to work on cutting-edge technologies with a good sense of coding, I pursue high-quality and easy-to-understand code. I'm very engaging and full of exuding positive energy too.
 
 ## Skills
 
-**Proficient:** Python, Java, Javascript, HTML/CSS, SQL, Machine Learning/Deep Learning
+**Proficient:** Python, Java, Javascript, HTML/CSS, SQL, Springboot
 
 **Competent:** Linux/Bash, Git, React/Vue, Kotlin, Docker
 
@@ -33,7 +34,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DanningJia
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (May 2022-present)**: Completed projects like Linux-SQL, Data Analytics, etc.
+**Software Developer, Jarvis (May 2022-present)**: Completed many projects like Linux-SQL, Data Analytics, Core java Apps, etc.
 
 **Software Developer, unTribe (Jan - Apr 2021)**: Collaborated with senior team members to implement REST web service module, Glossary, which enables searching through keywords, fetching last update, and adding comments. Worked with PM and UX to finalize and develop UI for Glossary interface with Figma and React components library. Implemented and optimized GraphQL client-side queries to improve data fetching from the Neo4j database.
 
