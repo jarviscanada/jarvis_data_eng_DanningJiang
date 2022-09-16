@@ -2,6 +2,7 @@ package ca.jrvs.practice.codingChallenge;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Stack;
 
 public class Solution {
     //compare two maps
@@ -61,5 +62,71 @@ public class Solution {
         }
         return result;
     }
+
+    /**
+     * Valid Parentheses - Stack method
+     * Time Complexity: O(N)
+     * Space Complexity: O(N)
+     * @param s
+     * @return boolean
+     */
+    public boolean isValid(String s) {
+        if (s.length() == 0) {
+            return true;
+        }
+
+        //save all open brackets
+        Stack<Character> stack = new Stack<>();
+        for (char ch : s.toCharArray()) {
+            if (ch == '(' || ch == '{' || ch == '[') {
+                stack.push(ch);
+            } else {
+                if (stack.isEmpty()) {
+                    return false;
+                } else {
+                    char temp = stack.pop();
+                    if (ch == ')') {
+                        if (temp != '(') return false;
+                    } else if (ch == '}') {
+                        if (temp != '{') return false;
+                    } else if (ch == ']') {
+                        if (temp != '[') return false;
+                    }
+                }
+            }
+        }
+
+        return stack.isEmpty() ? true : false;
+    }
+
+    /**
+     * Valid Palindrome - two pointers method
+     * Time Complexity:O(N/2)
+     * Space Complexity:O(N)
+     * @param s
+     * @return boolean
+     */
+    public boolean isPalindrome(String s) {
+        if(s == "" || s.length() == 1) return true;
+        StringBuilder sb = new StringBuilder();
+        for (char c : s.toLowerCase().toCharArray()){
+            if(c >= 'a' && c <= 'z') sb.append(c);
+            else if(c >= '0' && c <= '9') sb.append(c);
+        }
+
+        String str = sb.toString();
+
+        int l = 0;
+        int r = str.length()-1;
+        while(l<r){
+            if(str.charAt(l) != str.charAt(r)) return false;
+            l++;
+            r--;
+        }
+
+        return true;
+    }
+
+
 
 }
