@@ -1,19 +1,21 @@
 # Danning Jiang . Jarvis Consulting
 
-I graduated with a master's degree in Computer Science. I mainly focused on machine learning and deep learning during my graduate study. Currently, I am working at the Jarvis Consulting Group and concentrating on software development. I also had some hands-on experience in software development before, one of which is web development using the latest techniques like javascript, React, GraphQL, and Node.js, with the Neo4j database. Also, I worked as an Android developer  and used Kotlin as the development language. For both those developments, I did the UI design for them as well, which I'm always interested in. After joining Jarvis, I consolidated my knowledge of Java, Springboot, Linux, SQL, Bash, Git, Docker and other techniques. It is worth mentioning that I had designed and implemented a library seat selecting and booking system which was developed in C#, using B/S architecture. I am highly detail-oriented and logical, also a fast learner, and have a strong motivation to work on cutting-edge technologies with a good sense of coding, I pursue high-quality and easy-to-understand code. I'm very engaging and full of exuding positive energy too.
+Hi there, I recently graduated with a master's degree in Computer Science from Lakehead University. Currently, I am working at the Jarvis Consulting Group and concentrating on software development. I found my interest in full-stack development, and equipped myself with Angular,Express,Node.js and other related full-stack techs through the Twitter CRUD project. Also, having about 4-month internship experience as a front-end developer sharped my front-end skill, during which we used another full-stack framework called GRANDstack which combines GraphQL,React,Apollo and Neo4j. Other than that, I worked as an Android developer as well using Kotlin. After joining Jarvis, I consolidated my knowledge of Java, Linux, SQL, Bash, Git, and Docker techniques. It is worth mentioning that I have designed and implemented a library seat selecting and booking system which was developed in C#, using B/S architecture. I am highly detail-oriented and logical, also a fast learner, and have a strong motivation to work on cutting-edge technologies with a good sense of coding, I pursue high-quality and easy-to-understand code. I'm very engaging and full of exuding positive energy too.
 
 ## Skills
 
-**Proficient:** Python, Java, Javascript, HTML/CSS, SQL, Springboot
+**Proficient:** Javascript/Typescript, Python, Angular, HTML/CSS, SQL, Java
 
-**Competent:** Linux/Bash, Git, React/Vue, Kotlin, Docker
+**Competent:** Linux/Bash, Git, React/Vue, Node.js/Express, Docker
 
-**Familiar:** C#, ASP.NET, Node.js, Figma, Neo4J/GraphQL
+**Familiar:** C#, ASP.NET, Kotlin, Figma, Neo4J/GraphQL
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DanningJiang](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang)
 
+
+**Twitter CRUD Web** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang/tree/masterhttps://github.com/dn717/Twitter-Platform)]: Implemented a Twitter application with full CRUD functions, which utilizes Angular on the front end and Node/Express on the backend along with Knex.js and PostgreSQL for the Database.
 
 **Linux Cluster Resource Monitoring Agent** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang/tree/master/linux_sql)]: Developed the monitoring agent program aims to record the hardware specifications of each host and monitor host resource usage (e.g. CPU/Memory) in real-time. The agent was installed on each server to collect both hardware specification data and resource usage data, and then persisted the collected data into an RDBMS database through a psql instance(container). Used cron job to collect data automatically and detect the data usage. Technologies being used include Bash, Docker, Git, PostgreSQL.
 
