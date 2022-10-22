@@ -1,0 +1,30 @@
+.tweet-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tweet {
+    width: 40%;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(29,161,242);
+    border-radius: 10px;
+}
+
+.tweet header {
+    margin: 0;
+    height: 20px;
+}
+
+.tweet > * {
+    margin: 0;
+
+}
+
+a{
+    text-decoration: none;
+    
+}

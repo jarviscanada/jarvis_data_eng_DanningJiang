@@ -1,0 +1,30 @@
+/* CSS Hierarchy */
+/* 1. !important */
+/* 2. id */
+/* 3. classes */
+/* 4. everything else in order from top to bottom */
+nav {
+    display: flex;
+    background-color: rgb(29,161,242)
+}
+
+.left-nav {
+    width: 50%;
+}
+
+.right-nav {
+    width: 50%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+nav ul li:hover {
+    position: relative;
+    background-color: yellow;
+    border-radius: 4px;
+}
+
+nav ul a {
+    text-decoration: none;
+}

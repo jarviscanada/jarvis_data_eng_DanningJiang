@@ -1,0 +1,15 @@
+
+<div class="tweet-container">
+    <div class="tweet" *ngFor="let tweet of tweets">
+        <!--Everyting inside of this div is included inside the for of loop-->
+        <!--only works for Arrays-->
+        <header>
+            <p>{{tweet.name}}</p>
+        </header>
+        <p>{{tweet.description}}</p>
+        <a routerLink="/detail/{{tweet.id}}"><button>See Details</button></a>
+        <a routerLink="/edit/{{tweet.id}}"><button>Edit</button></a>
+        <button (click)="deleteTweet(tweet.id)" style="margin-left:5px;">Delete</button>
+
+    </div>
+</div>
