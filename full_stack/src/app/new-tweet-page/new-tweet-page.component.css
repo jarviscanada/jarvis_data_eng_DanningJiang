@@ -1,0 +1,21 @@
+form{
+    width: 60vw;
+    height: 40vh;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29,161,242);
+    border-radius: 10px;
+}
+
+form input{
+    width: 60%;
+    padding: 5px;
+}
+
+form button{
+    margin: 10px;
+    width: 30%;
+}

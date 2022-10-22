@@ -1,0 +1,15 @@
+<!-- <form (ngSubmit)="submitForm()">
+    <label for="name-input">Update Name:</label>
+    <input type="text" (change)="onChange()" [(ngModel)]="updatedTweet.name" id="name-input" name="name">
+    <label for="description-input">description</label>
+    <input type="text" (change)="onChange()" id="description-input" name="description" [(ngModel)]="updatedTweet.description">
+    <button type="submit" (click)="submitForm()">Update Tweet</button> 
+</form> -->
+
+<form (ngSubmit)="submitForm()" *ngIf="updatedTweet">
+    <label for="name">Update Name:</label>
+    <input type="text" (change)="onChange()" [(ngModel)]="updatedTweet.name" id="name-input" name="name" placeholder="{{updatedTweet.name}}">
+    <label for="description">Update Description:</label>
+    <input type="text" (change)="onChange()" id="description-input" name="description" [(ngModel)]="updatedTweet.description" placeholder="{{updatedTweet.description}}">
+    <button type="submit">Update Tweet</button>
+</form>

@@ -1,0 +1,7 @@
+<form (ngSubmit)="submitForm()">
+    <label for="name-input">Name</label>
+    <input type="text" (change)="onChange()" [(ngModel)]="newTweet.name" id="name-input" name="name">
+    <label for="description-input">Description</label>
+    <input type="text" (change)="onChange()" id="description-input" name="description" [(ngModel)]="newTweet.description">
+    <button type="submit" (click)="submitForm()">Create New Tweet</button> 
+</form>

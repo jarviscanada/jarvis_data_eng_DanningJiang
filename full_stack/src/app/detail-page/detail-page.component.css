@@ -1,0 +1,14 @@
+.detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tweet {
+    border-radius: 10px;
+    width: 40%;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(29,161,242);
+}
