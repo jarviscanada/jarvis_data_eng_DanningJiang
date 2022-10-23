@@ -6,16 +6,18 @@ Hi there, I recently graduated with a master's degree in Computer Science from L
 
 **Proficient:** Javascript/Typescript, Python, Angular, HTML/CSS, SQL, Java
 
-**Competent:** Linux/Bash, Git, React/Vue, Node.js/Express, Docker
+**Competent:** Node.js/Express, Git, Linux/Bash, React, Docker
 
-**Familiar:** C#, ASP.NET, Kotlin, Figma, Neo4J/GraphQL
+**Familiar:** C#/ASP.NET, Maven, Kotlin, Figma, Neo4J/GraphQL
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DanningJiang](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang)
 
 
-**Twitter CRUD Web** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang/tree/masterhttps://github.com/dn717/Twitter-Platform)]: Implemented a Twitter application with full CRUD functions, which utilizes Angular on the front end and Node/Express on the backend along with Knex.js and PostgreSQL for the Database.
+**Twitter CRUD Web** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang/tree/master/full_stack)]: Implemented a Twitter application with full CRUD functions, which utilizes Angular on the front end and Node/Express on the backend along with Knex.js and PostgreSQL for the Database.
+
+**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang/tree/master/python_data_analytics)]: Performed data analytics that helps the marketing team of a retailer by analyzing and visualizing their customer shopping behaviour data. The data was stored in a PostgreSQL database which was provisioned using a docker container, and it was connected to the Jupyter Notebook to perform analyses. Pandas, NumPy, and MatPlotLib libraries are used to wrangle the dataset as well as display the results. OLAP method was used to analyze massive volumes of data rapidly.
 
 **Linux Cluster Resource Monitoring Agent** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang/tree/master/linux_sql)]: Developed the monitoring agent program aims to record the hardware specifications of each host and monitor host resource usage (e.g. CPU/Memory) in real-time. The agent was installed on each server to collect both hardware specification data and resource usage data, and then persisted the collected data into an RDBMS database through a psql instance(container). Used cron job to collect data automatically and detect the data usage. Technologies being used include Bash, Docker, Git, PostgreSQL.
 
@@ -24,8 +26,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DanningJia
   - Twitter App: Built a Java Twitter command line CRUD application that uses Twitter's REST APIs to provide services to the end-user, such as being able post, show, or delete Tweets. The application follows the MVC architecture and comprises multiple layers to facilitate development and testing. Spring Boot was used to manage all of the dependencies. JUnit and Mockito were used to test the application, and Maven was used to package it. Deployment was done using Docker.
   - JDBC App: Implemented a JDBC app that connects Java to a PostgreSQL database. It allows performing CRUD operations on retail database by mapping the Java objects to the relational database tables through the JDBC interface. It was built using the Data Access Object (DAO) pattern and tested on generated SQL sales data, made in Java with the Maven.
   - Grep App: Developed a java tool which can search through all files recursively under a specified directory with given text pattern, similar to the GREP command in Linux. The app was written in Java 8 and utilizes its features such as Lambdas and Streams for efficient data processing. It was created using the Maven and packaged using Docker and available on DockerHub.
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DanningJiang/tree/master/python_data_analytics)]: Performed data analytics that helps the marketing team of a retailer by analyzing and visualizing their customer shopping behaviour data. The data was stored in a PostgreSQL database which was provisioned using a docker container, and it was connected to the Jupyter Notebook to perform analyses. Pandas, NumPy, and MatPlotLib libraries are used to wrangle the dataset as well as display the results. OLAP method was used to analyze massive volumes of data rapidly.
 
 
 ## Highlighted Projects

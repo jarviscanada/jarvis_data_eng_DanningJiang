@@ -36,8 +36,13 @@
   "jarvis_projects": [
     {
       "description": "Implemented a Twitter application with full CRUD functions, which utilizes Angular on the front end and Node/Express on the backend along with Knex.js and PostgreSQL for the Database.",
-      "git_url": "https://github.com/dn717/Twitter-Platform",
+      "git_url": "/full_stack",
       "name": "Twitter CRUD Web"
+    },
+    {
+      "description": "Performed data analytics that helps the marketing team of a retailer by analyzing and visualizing their customer shopping behaviour data. The data was stored in a PostgreSQL database which was provisioned using a docker container, and it was connected to the Jupyter Notebook to perform analyses. Pandas, NumPy, and MatPlotLib libraries are used to wrangle the dataset as well as display the results. OLAP method was used to analyze massive volumes of data rapidly.",
+      "git_url": "/python_data_analytics",
+      "name": "Python Data Analytics"
     },
     {
       "description": "Developed the monitoring agent program aims to record the hardware specifications of each host and monitor host resource usage (e.g. CPU/Memory) in real-time. The agent was installed on each server to collect both hardware specification data and resource usage data, and then persisted the collected data into an RDBMS database through a psql instance(container). Used cron job to collect data automatically and detect the data usage. Technologies being used include Bash, Docker, Git, PostgreSQL.",
@@ -52,11 +57,6 @@
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
-    },
-    {
-      "description": "Performed data analytics that helps the marketing team of a retailer by analyzing and visualizing their customer shopping behaviour data. The data was stored in a PostgreSQL database which was provisioned using a docker container, and it was connected to the Jupyter Notebook to perform analyses. Pandas, NumPy, and MatPlotLib libraries are used to wrangle the dataset as well as display the results. OLAP method was used to analyze massive volumes of data rapidly.",
-      "git_url": "/python_data_analytics",
-      "name": "Python Data Analytics"
     }
   ],
   "name": "Danning Jiang",
@@ -93,15 +93,15 @@
   ],
   "skills": {
     "competent": [
-      "Linux/Bash",
-      "Git",
-      "React/Vue",
       "Node.js/Express",
+      "Git",
+      "Linux/Bash",
+      "React",
       "Docker"
     ],
     "familiar": [
-      "C#",
-      "ASP.NET",
+      "C#/ASP.NET",
+      "Maven",
       "Kotlin",
       "Figma",
       "Neo4J/GraphQL"

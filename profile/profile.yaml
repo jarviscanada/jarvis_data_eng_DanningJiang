@@ -19,15 +19,15 @@ skills:
     - Java
   # At least 5 skills
   competent:
-    - Linux/Bash
-    - Git
-    - React/Vue
     - Node.js/Express
+    - Git
+    - Linux/Bash
+    - React
     - Docker
   # At least 5 skills
   familiar:
-    - C#
-    - ASP.NET
+    - C#/ASP.NET
+    - Maven
     - Kotlin
     - Figma
     - Neo4J/GraphQL
@@ -35,8 +35,13 @@ skills:
 # List of Jarvis projects
 jarvis_projects:
   - name: "Twitter CRUD Web"
-    git_url: "https://github.com/dn717/Twitter-Platform"
+    git_url: "/full_stack"
     description: "Implemented a Twitter application with full CRUD functions, which utilizes Angular on the front end and Node/Express on the backend along with Knex.js and PostgreSQL for the Database."
+  - name: "Python Data Analytics"
+    git_url: "/python_data_analytics"
+    description: "Performed data analytics that helps the marketing team of a retailer by analyzing and visualizing their customer shopping behaviour data.
+    The data was stored in a PostgreSQL database which was provisioned using a docker container, and it was connected to the Jupyter Notebook to perform analyses. 
+    Pandas, NumPy, and MatPlotLib libraries are used to wrangle the dataset as well as display the results. OLAP method was used to analyze massive volumes of data rapidly."
   - name: "Linux Cluster Resource Monitoring Agent"
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
@@ -50,11 +55,6 @@ jarvis_projects:
       - "Twitter App: Built a Java Twitter command line CRUD application that uses Twitter's REST APIs to provide services to the end-user, such as being able post, show, or delete Tweets. The application follows the MVC architecture and comprises multiple layers to facilitate development and testing. Spring Boot was used to manage all of the dependencies. JUnit and Mockito were used to test the application, and Maven was used to package it. Deployment was done using Docker."
       - "JDBC App: Implemented a JDBC app that connects Java to a PostgreSQL database. It allows performing CRUD operations on retail database by mapping the Java objects to the relational database tables through the JDBC interface. It was built using the Data Access Object (DAO) pattern and tested on generated SQL sales data, made in Java with the Maven."
       - "Grep App: Developed a java tool which can search through all files recursively under a specified directory with given text pattern, similar to the GREP command in Linux. The app was written in Java 8 and utilizes its features such as Lambdas and Streams for efficient data processing. It was created using the Maven and packaged using Docker and available on DockerHub."
-  - name: "Python Data Analytics"
-    git_url: "/python_data_analytics"
-    description: "Performed data analytics that helps the marketing team of a retailer by analyzing and visualizing their customer shopping behaviour data.
-    The data was stored in a PostgreSQL database which was provisioned using a docker container, and it was connected to the Jupyter Notebook to perform analyses. 
-    Pandas, NumPy, and MatPlotLib libraries are used to wrangle the dataset as well as display the results. OLAP method was used to analyze massive volumes of data rapidly."
 
 # List of personal or academic projects
 # Feel free to add more projects
