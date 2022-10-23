@@ -1,6 +1,28 @@
-# MyApp
+# Twitter CRUD Web
+This Twitter Web application with full CRUD functionalities and was created using Angular as front-end and Node.js and Express as back-end.
+Also connecting PostgreSQL database through Knex.js.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
+
+## Get started
+### Clone the repo
+```shell
+git clone https://github.com/jarviscanada/jarvis_data_eng_DanningJiang.git
+cd full_stack
+```
+
+### Install npm packages
+
+Install the `npm` packages described in the `package.json` and verify that it works:
+
+```shell
+npm install
+npm start
+```
+
+The `npm start` command builds (compiles TypeScript and copies assets) the application into `dist/`, watches for changes to the source files, and runs `lite-server` on port `3000`.
+
+Shut it down manually with `Ctrl-C`.
 
 ## Development server
 
